@@ -26,5 +26,11 @@ namespace Repository
         }
 
         //public ListGetUserById
+        //
+        //private User _user;
+        //public void (User user)
+        //    {
+        //    _user=user;
+        //    }
     }
 }

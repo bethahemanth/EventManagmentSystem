@@ -4,6 +4,7 @@ namespace Services
 {
     public class UserService : IUserService
     {
+        //controllers->service(business logic)->repositories->Database(static data)
         //public string DeleteUserById()
         //{
         //    return "DeteUserById successfully executed";
@@ -33,7 +34,7 @@ namespace Services
             return _repository.GetAllUsers();
         }
 
-        public void GetUserById(int id)
+        public List<User> GetUserById(int id)
         {
             return _repository.GetUserById(id);
         }

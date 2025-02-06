@@ -13,6 +13,6 @@ namespace Services
         List<User> GetAllUsers();
         void DeleteAllUsers();
         void DeleteUserByID(int id);
-        void GetUserById(int id);
+        List<User> GetUserById(int id);
     }
 }

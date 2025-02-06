@@ -12,7 +12,7 @@ namespace Repository
         //List<user>
         void AddUser(User user);
         List<User> GetAllUsers();
-        void GetUserById(int id);
+        List<User> GetUserById(int id);
         void DeleteAllUsers();
         void DeleteUserByID(int id);
         

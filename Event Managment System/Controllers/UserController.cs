@@ -38,7 +38,7 @@ namespace Event_Managment_System.Controllers
         [ActionName("GetUserById")]
         public List<User> GetUserById(int id)
         {
-            _service.GetUserById(int id);
+            _service.GetUserById(id);
             return _service.GetAllUsers();
         }
 
