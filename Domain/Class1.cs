@@ -1,4 +1,4 @@
-﻿namespace Database
+﻿namespace Domain
 {
     public class Class1
     {

@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "Event_Managment_System.Controllers.UserController",
-    "Method": "AddUsers",
+    "Method": "AddUser",
     "RelativePath": "api/User/AddUsers",
     "HttpMethod": "POST",
     "IsController": true,
@@ -13,51 +13,9 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Event_Managment_System.Controllers.UserController",
-    "Method": "DeleteUserById",
-    "RelativePath": "api/User/DeleteUserById",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "newuser",
-        "Type": "Event_Managment_System.Models.User",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Event_Managment_System.Controllers.UserController",
-    "Method": "DeleteUsers",
-    "RelativePath": "api/User/DeleteUsers",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "newuser",
-        "Type": "Event_Managment_System.Models.User",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Event_Managment_System.Controllers.UserController",
-    "Method": "GetUsers",
-    "RelativePath": "api/User/GetUsers",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Event_Managment_System.Models.User, Event Managment System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Event_Managment_System.Models.User, Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

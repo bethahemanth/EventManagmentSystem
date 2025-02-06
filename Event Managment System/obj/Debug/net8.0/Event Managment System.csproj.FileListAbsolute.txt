@@ -10,6 +10,12 @@ C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin
 C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Database.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Repository.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Services.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Repository.pdb
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Services.pdb
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Database.pdb
 C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.csproj.AssemblyReference.cache
 C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.AssemblyInfoInputs.cache

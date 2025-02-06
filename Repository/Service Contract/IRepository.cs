@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Event_Managment_System.Models;
 
-namespace Repository.Service_Contract
+namespace Repository
 {
-    internal interface IRepository
+    public interface IRepository
     {
+        //List<user>
+        void AddUser(User user);
+        List<User> GetAllUsers();
     }
 }
