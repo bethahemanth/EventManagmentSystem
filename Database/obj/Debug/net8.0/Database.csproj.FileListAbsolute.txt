@@ -1,0 +1,12 @@
+C:\Users\hemanthb\source\repos\Event Managment System\Database\bin\Debug\net8.0\Database.deps.json
+C:\Users\hemanthb\source\repos\Event Managment System\Database\bin\Debug\net8.0\Database.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Database\bin\Debug\net8.0\Database.pdb
+C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\Database.AssemblyInfoInputs.cache
+C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\Database.AssemblyInfo.cs
+C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\Database.csproj.CoreCompileInputs.cache
+C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\Database.sourcelink.json
+C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\Database.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\refint\Database.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\Database.pdb
+C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\ref\Database.dll

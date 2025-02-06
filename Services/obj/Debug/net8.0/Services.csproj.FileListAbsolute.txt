@@ -1,0 +1,6 @@
+C:\Users\hemanthb\source\repos\Event Managment System\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hemanthb\source\repos\Event Managment System\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\hemanthb\source\repos\Event Managment System\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\hemanthb\source\repos\Event Managment System\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\hemanthb\source\repos\Event Managment System\Services\obj\Debug\net8.0\Services.sourcelink.json
+C:\Users\hemanthb\source\repos\Event Managment System\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache

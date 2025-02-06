@@ -1,0 +1,37 @@
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\appsettings.json
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Event Managment System.staticwebassets.endpoints.json
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Event Managment System.exe
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Event Managment System.deps.json
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Event Managment System.runtimeconfig.json
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Event Managment System.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Event Managment System.pdb
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.csproj.AssemblyReference.cache
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.AssemblyInfoInputs.cache
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.AssemblyInfo.cs
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.csproj.CoreCompileInputs.cache
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.sourcelink.json
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\scopedcss\bundle\Event Managment System.styles.css
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\staticwebassets\msbuild.Event Managment System.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\staticwebassets\msbuild.Event Managment System.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\staticwebassets\msbuild.build.Event Managment System.props
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Event Managment System.props
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Event Managment System.props
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Ma.18BFD655.Up2Date
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\refint\Event Managment System.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.pdb
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.genruntimeconfig.cache
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\ref\Event Managment System.dll

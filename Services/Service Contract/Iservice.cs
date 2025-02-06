@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Services.Service_Contract
+namespace Services
 {
-    internal interface Iservice
+    public interface IUserService
     {
+        string DeleteUserById();
     }
 }

@@ -1,7 +1,12 @@
-﻿namespace Services
+﻿using Event_Managment_System.Models;
+using Microsoft.AspNetCore.Mvc;
+namespace Services
 {
-    public class Class1
+    public class UserService: IUserService
     {
-
+        public string DeleteUserById()
+        {
+            return "DeteUserById successfully executed";
+        }
     }
 }
