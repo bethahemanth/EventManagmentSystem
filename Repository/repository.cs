@@ -1,17 +1,30 @@
 ﻿using Event_Managment_System.Models;
 using Database;
+//using Repository;
 namespace Repository
 {
     public class repository : IRepository
     {
-       
-        void IRepository.AddUser(User user)
+
+        public void AddUser(User user)
         {
             data.users.Add(user);
+        }
+
+        public void DeleteAllUsers()
+        {
+            data.users.Clear();
+        }
+
+        public void DeleteUserByID(int id)
+        {
+            data.users.RemoveAll(x => x.Id == id);
         }
         public List<User> GetAllUsers()
         {
             return data.users;
         }
+
+        //public ListGetUserById
     }
 }

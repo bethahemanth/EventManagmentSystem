@@ -11,5 +11,8 @@ namespace Services
     {
         void AddUser(User newuser);
         List<User> GetAllUsers();
+        void DeleteAllUsers();
+        void DeleteUserByID(int id);
+        void GetUserById(int id);
     }
 }

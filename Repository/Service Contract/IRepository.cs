@@ -7,10 +7,14 @@ using Event_Managment_System.Models;
 
 namespace Repository
 {
-    public interface IRepository
+     public interface IRepository
     {
         //List<user>
         void AddUser(User user);
         List<User> GetAllUsers();
+        void GetUserById(int id);
+        void DeleteAllUsers();
+        void DeleteUserByID(int id);
+        
     }
 }

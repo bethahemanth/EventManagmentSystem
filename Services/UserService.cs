@@ -18,9 +18,25 @@ namespace Services
             _repository.AddUser(newuser);
         }
 
+        public void DeleteAllUsers()
+        {
+            _repository.DeleteAllUsers();
+        }
+
+        public void DeleteUserByID(int id)
+        {
+            _repository.DeleteUserByID(id);
+        }
+
         public List<User> GetAllUsers()
         {
             return _repository.GetAllUsers();
         }
+
+        public void GetUserById(int id)
+        {
+            return _repository.GetUserById(id);
+        }
+
     }
 }

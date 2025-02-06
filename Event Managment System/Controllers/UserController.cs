@@ -34,20 +34,35 @@ namespace Event_Managment_System.Controllers
             return _service.GetAllUsers();
         }
 
+        [HttpGet]
+        [ActionName("GetUserById")]
+        public List<User> GetUserById(int id)
+        {
+            _service.GetUserById(int id);
+            return _service.GetAllUsers();
+        }
 
-        //[HttpDelete]
-        //[ActionName("DeleteUsers")]
-        //public ActionResult DeleteUsers([FromBody] User newuser)
+        //[HttpGet]
+        //[ActionName("GetUserById")]
+        //public List<User> GetUserById(int id)
         //{
-        //    users.Remove(newuser);
-        //    return Ok(newuser);
+        //    return _service.GetUserById(id);
         //}
 
-        //[HttpDelete]
-        //[ActionName("DeleteUserById")]
-        //public ActionResult DeleteUserById([FromBody] User newuser)
-        //{
+        [HttpDelete]
+        [ActionName("Deleteusers")]
+        public List<User> DeleteUsers()
+        {
+            _service.DeleteAllUsers();
+            return _service.GetAllUsers();
+        }
 
-        //}
+        [HttpDelete]
+        [ActionName("DeleteUserById")]
+        public List<User> DeleteUserByID(int id)
+        {
+            _service.DeleteUserByID(id);
+            return _service.GetAllUsers();
+        }
     }
 }
