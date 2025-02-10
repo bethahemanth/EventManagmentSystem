@@ -1,14 +1,23 @@
 ﻿using Event_Managment_System.Models;
 using Database;
-//using Repository;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using DataBase;
+
 namespace Repository
 {
     public class repository : IRepository
     {
-
-        public void AddUser(User user)
+        private readonly IDatabaseContext _databaseContext;
+        public repository(IDatabaseContext databaseContext)
         {
-            data.users.Add(user);
+            _databaseContext = databaseContext;
+        }
+
+        public User? GetUserById(int id)
+        {
+            return data.users.FirstOrDefault(x => x.Id == id);
         }
 
         public void DeleteAllUsers()
@@ -16,21 +25,70 @@ namespace Repository
             data.users.Clear();
         }
 
-        public void DeleteUserByID(int id)
+        public User DeleteUserByID(int id)
         {
-            data.users.RemoveAll(x => x.Id == id);
+            User user = data.users.FirstOrDefault(x => x.Id == id);
+            if (user != null)
+            {
+                data.users.Remove(user);
+            }
+            return user;
         }
+
         public List<User> GetAllUsers()
         {
             return data.users;
         }
 
-        //public ListGetUserById
-        //
-        //private User _user;
-        //public void (User user)
-        //    {
-        //    _user=user;
-        //    }
+        public string CreateTable()
+        {
+            string tablename = "Users";
+
+            List<string> columns = new List<string>
+            {
+                "\"Id\" SERIAL PRIMARY KEY",
+                "\"Name\" VARCHAR(100)",
+                "\"Email\" VARCHAR(255) UNIQUE",
+                "\"PasswordHash\" TEXT",
+                "\"Role\" VARCHAR(50)"
+            };
+
+            string query = $"CREATE TABLE \"{tablename}\" ({string.Join(", ", columns)});";
+
+            return _databaseContext.ExecuteQuery(query);
+        }
+
+        public string InsertUser(User user)
+        {
+            string query = $@"
+        INSERT INTO ""Users"" (""Name"", ""Email"", ""PasswordHash"", ""Role"") 
+        VALUES ('{user.Name}', '{user.Email}', '{user.PasswordHash}', '{user.Role}')
+        RETURNING ""Id"";"; // Returns the new ID
+
+            return _databaseContext.ExecuteQuery(query);
+        }
+
+        //public string GetUser(User user)
+        //{
+        //    string query = $"select * from \"Users\";";
+        //    return _databaseContext.ExecuteQuery(query);
+        //}
+
+        public string DeleteUserById(int id)
+        {
+            string query = $"delete from table \"Users\" where Id='{id}'";
+            return _databaseContext.ExecuteQuery(query);
+        }
+
+        public string DeleteAllusers()
+        {
+            string query = $"delete from  \"Users\" ";
+            return _databaseContext.ExecuteQuery(query);
+        }
+
+
+
+
     }
 }
+

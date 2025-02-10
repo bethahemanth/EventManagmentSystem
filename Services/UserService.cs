@@ -14,19 +14,16 @@ namespace Services
         {
             _repository = repository;
         }
-        public void AddUser(User newuser)
-        {
-            _repository.AddUser(newuser);
-        }
 
         public void DeleteAllUsers()
         {
             _repository.DeleteAllUsers();
         }
 
-        public void DeleteUserByID(int id)
+        public User DeleteUserByID(int id)
         {
-            _repository.DeleteUserByID(id);
+            //_repository.DeleteUserByID(id);
+            return _repository.DeleteUserByID(id);
         }
 
         public List<User> GetAllUsers()
@@ -34,9 +31,36 @@ namespace Services
             return _repository.GetAllUsers();
         }
 
-        public List<User> GetUserById(int id)
+        public User GetUserById(int id)
         {
             return _repository.GetUserById(id);
+        }
+
+        public string CreateTable()
+        {
+            return _repository.CreateTable();
+        }
+
+        public string InsertUser(User user)
+        {
+            return _repository.InsertUser(user);
+        }
+
+        //public string GetUser(User user)
+        //{
+        //    //string query = $"select * from \"Users\";";
+        //    return _repository.GetUser(user);
+        //}
+
+        public string DeleteUserById(int id)
+        {
+            return _repository.DeleteUserById(id);
+        }
+
+        public string DeleteAllusers()
+        {
+            string query = $"delete from table \"Users\" ";
+            return _repository.DeleteAllusers();
         }
 
     }

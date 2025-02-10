@@ -9,12 +9,19 @@ namespace Repository
 {
      public interface IRepository
     {
-        //List<user>
-        void AddUser(User user);
         List<User> GetAllUsers();
-        List<User> GetUserById(int id);
+        User GetUserById(int id);
         void DeleteAllUsers();
-        void DeleteUserByID(int id);
+        User DeleteUserByID(int id);
+
+        string CreateTable();
+        public string InsertUser(User user);
+
+        //public string GetUser(User user);
+        public string DeleteUserById(int id);
+
+        public string DeleteAllusers();
         
+
     }
 }

@@ -3,16 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Database;
 using Event_Managment_System.Models;
 namespace Services
 {
     public interface IUserService
     {
-        void AddUser(User newuser);
         List<User> GetAllUsers();
         void DeleteAllUsers();
-        void DeleteUserByID(int id);
-        List<User> GetUserById(int id);
+        User DeleteUserByID(int id);
+        User GetUserById(int id);
+        string CreateTable();
+        public string InsertUser(User user);
+
+        //public string GetUser(User user);
+        public string DeleteUserById(id);
+
+        public string DeleteAllusers();
     }
 }

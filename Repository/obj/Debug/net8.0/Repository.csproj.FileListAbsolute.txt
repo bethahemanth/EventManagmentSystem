@@ -14,3 +14,5 @@ C:\Users\hemanthb\source\repos\Event Managment System\Repository\obj\Debug\net8.
 C:\Users\hemanthb\source\repos\Event Managment System\Repository\obj\Debug\net8.0\refint\Repository.dll
 C:\Users\hemanthb\source\repos\Event Managment System\Repository\obj\Debug\net8.0\Repository.pdb
 C:\Users\hemanthb\source\repos\Event Managment System\Repository\obj\Debug\net8.0\ref\Repository.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Repository\bin\Debug\net8.0\Domain.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Repository\bin\Debug\net8.0\Domain.pdb

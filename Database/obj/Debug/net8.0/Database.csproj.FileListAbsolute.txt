@@ -10,3 +10,7 @@ C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\
 C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\refint\Database.dll
 C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\Database.pdb
 C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\ref\Database.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Database\bin\Debug\net8.0\Domain.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Database\bin\Debug\net8.0\Domain.pdb
+C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\Database.csproj.AssemblyReference.cache
+C:\Users\hemanthb\source\repos\Event Managment System\Database\obj\Debug\net8.0\Database.csproj.Up2Date

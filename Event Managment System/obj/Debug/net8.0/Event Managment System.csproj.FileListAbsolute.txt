@@ -41,3 +41,8 @@ C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj
 C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.pdb
 C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\Event Managment System.genruntimeconfig.cache
 C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\obj\Debug\net8.0\ref\Event Managment System.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Domain.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Domain.pdb
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\hemanthb\source\repos\Event Managment System\Event Managment System\bin\Debug\net8.0\Npgsql.dll
