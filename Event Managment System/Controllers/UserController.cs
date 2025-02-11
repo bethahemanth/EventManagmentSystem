@@ -16,50 +16,50 @@ namespace Event_Managment_System.Controllers
             _service =service;
         }
 
-        //[HttpPost]
-        //[ActionName("AddUsers")]
-        //public User AddUser([FromBody] User newuser)
+        ////[HttpPost]
+        ////[ActionName("AddUsers")]
+        ////public User AddUser([FromBody] User newuser)
+        ////{
+        ////    _service.AddUser(newuser);
+        ////    return newuser;
+        ////}
+
+        //[HttpGet]
+        //[ActionName("GetUsers")]
+        //public List<User> GetUsers()
         //{
-        //    _service.AddUser(newuser);
-        //    return newuser;
+        //    return _service.GetAllUsers();
         //}
-
-        [HttpGet]
-        [ActionName("GetUsers")]
-        public List<User> GetUsers()
-        {
-            return _service.GetAllUsers();
-        }
-
-        [HttpGet]
-        [ActionName("GetUserById")]
-        public User GetUserById(int id)
-        {
-            return _service.GetUserById(id);
-            
-        }
 
         //[HttpGet]
         //[ActionName("GetUserById")]
-        //public List<User> GetUserById(int id)
+        //public User GetUserById(int id)
         //{
         //    return _service.GetUserById(id);
+            
         //}
 
-        [HttpDelete]
-        [ActionName("Deleteusers")]
-        public List<User> DeleteUsers()
-        {
-            _service.DeleteAllUsers();
-            return _service.GetAllUsers();
-        }
+        ////[HttpGet]
+        ////[ActionName("GetUserById")]
+        ////public List<User> GetUserById(int id)
+        ////{
+        ////    return _service.GetUserById(id);
+        ////}
 
-        [HttpDelete]
-        [ActionName("DeleteUserById")]
-        public User DeleteUserByID(int id)
-        {
-            return _service.DeleteUserByID(id);
-        }
+        //[HttpDelete]
+        //[ActionName("Deleteusers")]
+        //public List<User> DeleteUsers()
+        //{
+        //    _service.DeleteAllUsers();
+        //    return _service.GetAllUsers();
+        //}
+
+        //[HttpDelete]
+        //[ActionName("DeleteUserById")]
+        //public User DeleteUserByID(int id)
+        //{
+        //    return _service.DeleteUserByID(id);
+        //}
 
         [HttpPost]
         [ActionName("CreateUser")]
@@ -75,20 +75,34 @@ namespace Event_Managment_System.Controllers
             return _service.InsertUser(user);   
         }
 
-        //[HttpGet]
-        //[ActionName("GetUser")]
-        //public string GetUser(User user)
-        //{
-        //    //string query = $"select * from \"Users\";";
-        //    return _service.GetUser(user);
-        //}
+        [HttpGet]
+        [ActionName("GetAllUsers")]
+        public string GetAllUsers()
+        {
+            return _service.GetAllUsers();
+        }
 
-        [HttpDelete("DeleteUserById/{id}")]
+
+        [HttpGet]
+        [ActionName("GetUserById")]
+        public string GetUserById(int id)
+        {
+            return _service.GetUserById(id);
+        }
+
+        [HttpPost]
+        [ActionName("UpdateUserById")]
+        public string UpdateUserById(int id, string name, string email, string PasswordHash, string Role)
+        {
+            return _service.UpdateUserById(id, name, email, PasswordHash, Role);
+        }
+
+
+        [HttpDelete]
+        [ActionName("DeleteUserById")]
         public string DeleteUserById(int id)
         {
-            return _service.DeleteUserById(id)
-                ? "User deleted successfully."
-                : "Failed to delete user.";
+            return _service.DeleteUserById(id);
         }
 
         [HttpDelete]

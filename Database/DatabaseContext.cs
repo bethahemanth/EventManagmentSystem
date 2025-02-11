@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using Npgsql;
 
 namespace DataBase
@@ -43,6 +44,68 @@ namespace DataBase
                 result = "Query Executed Successfully";
             }
 
+            return result;
+        }
+
+        public List<T> GetTableData<T>(string query)
+        {
+            query = $"with cte as ({query}) select json_agg(cte) from cte";
+            List<string> result = GetResult(query);
+            List<T> records = [];
+            if (result.Count > 0)
+            {
+                records = JsonConvert.DeserializeObject<List<T>>(result[0]);
+            }
+            return records;
+        }
+
+        public string UpdateQuery(string query, Dictionary<string, object> parameters)
+        {
+            using (NpgsqlConnection connection = CreateConnection())
+            {
+                using (NpgsqlCommand cmd = new(query, connection))
+                {
+                    foreach (var param in parameters)
+                    {
+                        cmd.Parameters.AddWithValue(param.Key, param.Value);
+                    }
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    return rowsAffected > 0 ? "Update successful" : "No records updated";
+                }
+            }
+        }
+
+
+        public List<string> GetResult(string query)
+        {
+            List<string> result = [];
+            using NpgsqlConnection connection = CreateConnection();
+            try
+            {
+                using NpgsqlCommand cmd = new();
+                cmd.Connection = connection;
+                cmd.CommandTimeout = 120;
+                cmd.CommandText = query;
+                NpgsqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    string row = dr[0]?.ToString();
+                    if (!string.IsNullOrEmpty(row))
+                    {
+                        result.Add(row);
+                    }
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
             return result;
         }
     }

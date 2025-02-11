@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using DataBase;
+using Newtonsoft.Json;
+using System.Data;
 
 namespace Repository
 {
@@ -15,30 +17,30 @@ namespace Repository
             _databaseContext = databaseContext;
         }
 
-        public User? GetUserById(int id)
-        {
-            return data.users.FirstOrDefault(x => x.Id == id);
-        }
+        //public User? GetUserById(int id)
+        //{
+        //    return data.users.FirstOrDefault(x => x.Id == id);
+        //}
 
-        public void DeleteAllUsers()
-        {
-            data.users.Clear();
-        }
+        //public void DeleteAllUsers()
+        //{
+        //    data.users.Clear();
+        //}
 
-        public User DeleteUserByID(int id)
-        {
-            User user = data.users.FirstOrDefault(x => x.Id == id);
-            if (user != null)
-            {
-                data.users.Remove(user);
-            }
-            return user;
-        }
+        //public User DeleteUserByID(int id)
+        //{
+        //    User user = data.users.FirstOrDefault(x => x.Id == id);
+        //    if (user != null)
+        //    {
+        //        data.users.Remove(user);
+        //    }
+        //    return user;
+        //}
 
-        public List<User> GetAllUsers()
-        {
-            return data.users;
-        }
+        //public List<User> GetAllUsers()
+        //{
+        //    return data.users;
+        //}
 
         public string CreateTable()
         {
@@ -63,20 +65,36 @@ namespace Repository
             string query = $@"
         INSERT INTO ""Users"" (""Name"", ""Email"", ""PasswordHash"", ""Role"") 
         VALUES ('{user.Name}', '{user.Email}', '{user.PasswordHash}', '{user.Role}')
-        RETURNING ""Id"";"; // Returns the new ID
+        RETURNING ""Id"";"; 
 
             return _databaseContext.ExecuteQuery(query);
         }
 
-        //public string GetUser(User user)
-        //{
-        //    string query = $"select * from \"Users\";";
-        //    return _databaseContext.ExecuteQuery(query);
-        //}
+        public string GetAllUsers()
+        {
+            string query = "SELECT * FROM \"Users\"";
+            var users = _databaseContext.GetTableData<User>(query);
+            return JsonConvert.SerializeObject(users, Formatting.Indented);
+        }
+
+        public string GetUserById(int id)
+        {
+            string query = $"SELECT * FROM \"Users\" WHERE \"Id\" = {id}";
+            var users = _databaseContext.GetTableData<User>(query);
+            return JsonConvert.SerializeObject(users, Formatting.Indented);
+        }
+
+     
+        public string UpdateUserById(int id, string name, string email, string passwordHash, string role)
+        {
+            string query = $"UPDATE \"Users\" SET \"Name\" = '{name}', \"Email\" = '{email}', \"Role\" = '{role}', \"PasswordHash\" = '{passwordHash}' WHERE \"Id\" = {id}";
+            return _databaseContext.ExecuteQuery(query);
+        }
+
 
         public string DeleteUserById(int id)
         {
-            string query = $"delete from table \"Users\" where Id='{id}'";
+            string query = $"DELETE FROM \"Users\" WHERE \"Id\" = {id}";
             return _databaseContext.ExecuteQuery(query);
         }
 

@@ -10,15 +10,18 @@ namespace Services
 {
     public interface IUserService
     {
-        List<User> GetAllUsers();
-        void DeleteAllUsers();
-        User DeleteUserByID(int id);
-        User GetUserById(int id);
+        //List<User> GetAllUsers();
+        //void DeleteAllUsers();
+        //User DeleteUserByID(int id);
+        //User GetUserById(int id);
         string CreateTable();
         public string InsertUser(User user);
 
-        //public string GetUser(User user);
-        public string DeleteUserById(id);
+        public string GetAllUsers();
+        public string GetUserById(int id);
+
+        public string UpdateUserById(int id, string name, string email, string PasswordHash, string Role);
+        public string DeleteUserById(int id);
 
         public string DeleteAllusers();
     }

@@ -15,26 +15,26 @@ namespace Services
             _repository = repository;
         }
 
-        public void DeleteAllUsers()
-        {
-            _repository.DeleteAllUsers();
-        }
+        //public void DeleteAllUsers()
+        //{
+        //    _repository.DeleteAllUsers();
+        //}
 
-        public User DeleteUserByID(int id)
-        {
-            //_repository.DeleteUserByID(id);
-            return _repository.DeleteUserByID(id);
-        }
+        //public User DeleteUserByID(int id)
+        //{
+        //    //_repository.DeleteUserByID(id);
+        //    return _repository.DeleteUserByID(id);
+        //}
 
-        public List<User> GetAllUsers()
-        {
-            return _repository.GetAllUsers();
-        }
+        //public List<User> GetAllUsers()
+        //{
+        //    return _repository.GetAllUsers();
+        //}
 
-        public User GetUserById(int id)
-        {
-            return _repository.GetUserById(id);
-        }
+        //public User GetUserById(int id)
+        //{
+        //    return _repository.GetUserById(id);
+        //}
 
         public string CreateTable()
         {
@@ -46,11 +46,20 @@ namespace Services
             return _repository.InsertUser(user);
         }
 
-        //public string GetUser(User user)
-        //{
-        //    //string query = $"select * from \"Users\";";
-        //    return _repository.GetUser(user);
-        //}
+        public string GetAllUsers()
+        {
+            return _repository.GetAllUsers();
+        }
+
+        public string GetUserById(int id)
+        {
+            return _repository.GetUserById(id);
+        }
+
+        public string UpdateUserById(int id, string name, string email, string PasswordHash, string Role)
+        {
+            return _repository.UpdateUserById(id,name,email,PasswordHash,Role);
+        }
 
         public string DeleteUserById(int id)
         {

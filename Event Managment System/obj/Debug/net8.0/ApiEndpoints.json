@@ -67,7 +67,7 @@
   },
   {
     "ContainingType": "Event_Managment_System.Controllers.UserController",
-    "Method": "DeleteUserByID",
+    "Method": "DeleteUserById",
     "RelativePath": "api/User/DeleteUserById",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -81,7 +81,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Event_Managment_System.Models.User",
+        "Type": "System.String",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -93,15 +93,15 @@
   },
   {
     "ContainingType": "Event_Managment_System.Controllers.UserController",
-    "Method": "DeleteUsers",
-    "RelativePath": "api/User/Deleteusers",
-    "HttpMethod": "DELETE",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/User/GetAllUsers",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Event_Managment_System.Models.User, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.String",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -127,7 +127,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Event_Managment_System.Models.User",
+        "Type": "System.String",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -139,15 +139,41 @@
   },
   {
     "ContainingType": "Event_Managment_System.Controllers.UserController",
-    "Method": "GetUsers",
-    "RelativePath": "api/User/GetUsers",
-    "HttpMethod": "GET",
+    "Method": "UpdateUserById",
+    "RelativePath": "api/User/UpdateUserById",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PasswordHash",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Role",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Event_Managment_System.Models.User, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.String",
         "MediaTypes": [
           "text/plain",
           "application/json",
