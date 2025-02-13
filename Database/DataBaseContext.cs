@@ -10,7 +10,7 @@ namespace DataBase
 {
     public class DatabaseContext : IDatabaseContext
     {
-        private readonly string connectionString = "Server=172.162.12.47;Port=5432;User Id=postgres;Password=n@v@yUg@kw!x##;Database=FreshersTraining;Pooling=true;MaxPoolSize=100;Include Error Detail=true";
+        
 
         public NpgsqlConnection CreateConnection()
         {
