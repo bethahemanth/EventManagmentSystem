@@ -13,7 +13,7 @@ namespace DataBase
 
         string ExecuteQuery(string query);
 
-        public string UpdateQuery(string query, Dictionary<string, object> parameters);
+        //public string UpdateQuery(string query, Dictionary<string, object> parameters);
 
 
         public List<T> GetTableData<T>(string query);

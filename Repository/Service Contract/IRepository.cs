@@ -9,15 +9,10 @@ namespace Repository
 {
      public interface IRepository
     {
-        //List<User> GetAllUsers();
-        //User GetUserById(int id);
-        //void DeleteAllUsers();
-        //User DeleteUserByID(int id);
-
         string CreateTable();
         public string InsertUser(User user);
 
-        public string GetAllUsers();
+        public List<User> GetAllUsers();
 
         public string GetUserById(int id);
 
@@ -25,7 +20,8 @@ namespace Repository
         public string DeleteUserById(int id);
 
         public string DeleteAllusers();
-        
+
+        //public List<User> _GetAllUsers();
 
     }
 }

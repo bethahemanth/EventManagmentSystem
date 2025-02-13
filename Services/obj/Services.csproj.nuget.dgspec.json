@@ -248,6 +248,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\hemanthb\\source\\repos\\Event Managment System\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\hemanthb\\source\\repos\\Event Managment System\\Domain\\Domain.csproj"
+              },
               "C:\\Users\\hemanthb\\source\\repos\\Event Managment System\\Repository\\Repository.csproj": {
                 "projectPath": "C:\\Users\\hemanthb\\source\\repos\\Event Managment System\\Repository\\Repository.csproj"
               }
